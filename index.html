@@ -1,0 +1,533 @@
+<html>
+<head>
+<title>The Worst Meeting EVER</title>
+<script type="text/javascript">
+var scene = 0;
+var pic = "title.png";
+
+function changeValues1(message)
+{
+	document.getElementById("choice1").value = message;
+}
+
+function hide2()
+{
+	document.getElementById("choice2").style.visibility="hidden";
+}
+
+function hide3()
+{
+	document.getElementById("choice3").style.visibility="hidden";
+}
+
+function show2()
+{
+	document.getElementById("choice2").style.visibility="visible";
+}
+
+function hide4()
+{
+	document.getElementById("choice4").style.visibility="hidden";
+}
+
+function show4()
+{
+	document.getElementById("choice4").style.visibility="visible";
+}
+
+function show3()
+{
+	document.getElementById("choice3").style.visibility="visible";
+}
+
+function changeValues2(message)
+{
+	document.getElementById("choice2").value = message;
+}
+
+function changeValues3(message)
+{
+	document.getElementById("choice3").value = message;
+}
+function changeValues4(message)
+{
+	document.getElementById("choice4").value = message;
+}
+
+function changeScene(choice)
+{
+
+	if (scene == 0)
+	{
+		if (choice)
+		{
+			scene = 1;
+			message = "Your local government is coming together for the yearly budget meeting. Ho hum.</br>However, the place is packed. A casual observer may think that in this community, everyone cares about budgets or large numbers or even their local government.</br>No. That isn't anywhere near the case.</br>The case is that in a sudden and strange turn of events, the local government has far too much money!";
+			changeValues1('Say whaaaaat?');
+			pic = "1.png";
+		}
+	}
+	else if (scene == 1)
+	{
+		if (choice)
+		{
+			scene = 2;
+			message = "There has been discussion about how to get rid of all of this money. The mayor has suggested that he use this, the people's money, to buy him a large, fancy car; one covered in thousands of diamonds that glisten in the sunlight. The people, however, have suggested that the mayor buy one of those cars for each citizen of the town.</br>Basically, not a lot of progress has been made.";
+			changeValues1('Have there been any other suggestions?');
+			pic = "2.png";
+		}
+	}
+	else if (scene == 2)
+	{
+		if (choice)
+		{
+			scene = 3;
+			message = "Not really. But feel free to make one!";
+			show2();
+			show3();
+			changeValues1('We should burn down the town, then use the money to rebuild!');
+			changeValues2('Bribe neighboring towns to do your bidding!');
+			changeValues3('Save the money for the future!');
+			pic = "3.png";
+		}
+	}
+	else if (scene == 3)
+	{
+		if (choice==1)
+		{
+			scene = 4;
+			message = "The mayor responds that that's a bit wasteful.</br>Plus, that would stop progress on the extension he's putting on his house (paid with the people's money, of course.)";
+			hide2();
+			hide3();
+			changeValues1('A voice speaks up...');
+			pic = "no.png";
+		}
+		else if (choice==2)
+		{
+			scene = 4;
+			message = "What exactly is 'our bidding'?, the mayor asks.</br>And plus, we ain't givin' our money away to other people.";
+			hide2();
+			hide3();
+			changeValues1('A voice speaks up...');
+			pic = "but money.png";
+		}
+		else if (choice==3)
+		{
+			scene = 4;
+			message = "People scream. Riots break out.</br><b>WHAT HAVE YOU DONE?</b>";
+			hide2();
+			hide3();
+			changeValues1('A voice speaks up...');
+			pic = "what have you done.png";
+		}
+	}
+	else if (scene == 4)
+	{
+		if (choice)
+		{
+			scene = 5;
+			message = "What if we abolish local taxes?";
+			changeValues1('People: Rejoice.');
+			pic = "5.png";
+		}
+	}
+	else if (scene == 5)
+	{
+		if (choice)
+		{
+			scene = 6;
+			message = "Everyone thinks that it's a brilliant idea!</br>Whoever came up with it should be rewarded!</br></br>However, everyone says they came up with the idea, so no one goes down in the history books.";
+			changeValues1('Mayor: Make a motion');
+			pic = "rejoice.png";
+		}
+	}
+	else if (scene == 6)
+	{
+		if (choice)
+		{
+			scene = 7;
+			message = "The mayor makes a motion to completely abolish local taxes in order to chew up the surplus money.";
+			changeValues1('Second the motion!');
+			show2();
+			changeValues2('Yell \'No, this is a bad idea!\'');
+			pic = "no car for me.png";
+		}
+	}
+	else if (scene == 7)
+	{
+		if (choice==1)
+		{
+			scene = 8;
+			message = "You weren't alone in seconding the motion. Never before has an entire town unanimously voted for anything.</br>So many hands went up so fast that it easily could have lifted a small rocket into orbit at that moment.</br></br>But anyway, no taxes! This might possibly be the BEST meeting ever!";
+			changeValues1('Continue.');
+			hide2();
+			pic = "a new title.png";
+		}
+		if (choice==2)
+		{
+			scene = 8;
+			message = "No one doesn't second the motion. You feel pressured to do the same. You slowly raise your hand to second. Actually, at this point, you must be 500th-ing it.</br>Aww, but paying taxes was so fun though! Oh well. It's what the majority wants.";
+			changeValues1('Continue.');
+			hide2();
+			pic = "hands.png";
+		}
+	}
+	else if (scene == 8)
+	{
+		if (choice)
+		{
+			scene = 9;
+			message = "The mayor is satisfied with a unanimous vote, although slightly disappointed that he doesn't get his car. He sits back in his chair as the minutes-taker takes down the minutes.</br></br>The minutes-taker has a dilemma. He isn't sure who to put down as seconding the vote!";
+			changeValues1('Continue.');
+			pic = "oh no.png";
+		}
+	}
+	else if (scene == 9)
+	{
+		if (choice)
+		{
+			scene = 10;
+			message = "Ten people come up to the stage, saying that they seconded first.</br></br>It is YOUR job to determine <b>who the first second was.</b>";
+			changeValues1('Who says they seconded first?');
+			pic = "in total.png";
+		}
+	}
+	else if (scene == 10)
+	{
+		if (choice)
+		{
+			scene = 11;
+			message = "The ten people come up.</br>Their names are <b>Alfred, Barbara, Cletus, Debra, Edward, Francine, George, Harriet, Icarus, and Joanne.</b></br>Luckily, for your convenience, their names have been alphabetized, letters A-J.</br></br>It would probably be wisest to start eliminating some. After all, only one of these guys truly seconded first.";
+			changeValues1('Cletus');
+			show2();
+			show3();
+			changeValues2('Francine');
+			changeValues3('Harriet');
+			pic = "in total with names.png";
+		}
+	}
+	else if (scene == 11)
+	{
+		if (choice==1)
+		{
+			scene = 12;
+			message = "Cletus takes a deep breath.</br>\"Dearest fellow-folk, I proclaim that I am heir to the title of 'seconder'. For in a timely manner, I ensured that I would be first to reaffirm the mayor's proposition of the elimination of taxes (as far as local municipalities are involved.)\"";
+			hide2();
+			hide3();
+			hide4();
+			changeValues1('?');
+			pic = "cletus.png";
+		}
+		if (choice==2)
+		{
+			scene = 13;
+			message = "Francine starts muttering that no, it was not her.</br>She starts screaming.</br>She is not a witch, she yells! Don't burn me, she hollers!</br></br>Yeah, this lady is insane.";
+			hide2();
+			hide3();
+			hide4();
+			changeValues1('Moving on...');
+			pic = "francine.png";
+		}
+		if (choice==3)
+		{
+			scene = 14;
+			message = "OBJECTION!</br>Harriet's husband, Alfred, says that she was running an errand when the seconding commenced! She could not have been the first second when she wasn't even here!";
+			hide2();
+			hide3();
+			hide4();
+			changeValues1('Harriet\'s out.');
+			pic = "blaming harriet.png";
+		}
+	}
+	else if (scene==12)
+	{
+		if (choice)
+		{
+			scene = 17;
+			message = "No one understands a word he just said. Everyone assumes that means he didn't do it, so he's out of the game now!</br>Two more people come up to the stage to make their claim.";
+			show2();
+			changeValues1('Barbara');
+			changeValues2('George');
+			pic = "out cletus.png";
+		}
+	}
+	else if (scene == 13)
+	{
+		if(choice)
+		{
+			scene = 16;
+			message = "Even if Francine did it, no one would want her name to go on the minutes anyway.</br></r>What if Cletus did it?";
+			changeValues1('What has Cletus to say?');
+			pic = "out francine.png";
+		}
+	}
+	else if (scene == 14)
+	{
+		if (choice)
+		{
+			scene = 15;
+			message = "Alfred instead insists that it was actually HIM who was first!";
+			changeValues1('But wait!');
+			pic = "alfred insists.png";
+		}
+	}
+	else if (scene == 15)
+	{
+		if (choice)
+		{
+			scene = 18;
+			message = "There is apparently evidence that both Alfred and George were not at the scene when the vote was cast.</br>Instead, they were robbing the bank! So neither of them could possibly have been first.</br>They got away with it too because everyone in town was at the meeting. They both thought it was a pretty ingenious plan. They would have gotten away with it too if they hadn't brought all the money with them to the meeting.</br></br>Anyway, back to deducing.";
+			changeValues1('Cletus');
+			show2();
+			show3();
+			show4();
+			changeValues2('Francine');
+			changeValues3('Barbara');
+			changeValues4('Umm, all of those people are eliminated already!');
+			pic = "alfred to jail.png";
+		}
+	}
+	else if (scene == 16)
+	{
+		if (choice)
+		{
+			scene = 12;
+			message = "Cletus takes a deep breath.</br>\"Dearest fellow-folk, I proclaim that I am heir to the title of 'seconder'. For in a timely manner, I ensured that I would be first to reaffirm the mayor's proposition of the elimination of taxes (as far as local municipalities are involved.)\"";
+			hide2();
+			hide3();
+			changeValues1('?');
+			pic = "cletus.png";
+		}
+	}
+	else if (scene == 17)
+	{
+		if (choice==1)
+		{
+			scene = 19;
+			message = "The mayor is getting sick of all this arguing. He takes out the instant replay footage. He exposes the fact that several other people had their hands up before Barbara's, so she couldn't be first.</br></br>Barbara asks why he can't just use the footage to determine who was first. He responds by saying that would be the easy way out.";
+			hide2();
+			changeValues1('Could it have been Harriet?');
+			hide4();
+			pic = "mayor disagrees.png";
+		}
+		else if (choice==2)
+		{
+			scene = 18;
+			message = "There is apparently evidence that both Alfred and George were not at the scene when the vote was cast.</br>Instead, they were robbing the bank! So neither of them could possibly have been first.</br>They got away with it too because everyone in town was at the meeting. They both thought it was a pretty ingenious plan. They would have gotten away with it too if they hadn't brought all the money with them to the meeting.</br></br>Anyway, back to deducing.";
+			changeValues1('Cletus');
+			show2();
+			show3();
+			show4();
+			changeValues2('Francine');
+			changeValues3('Barbara');
+			changeValues4('Umm, all of those people are eliminated already!');
+			pic = "alfred to jail.png";
+		}
+	}
+	else if (scene == 18)
+	{
+		if (choice==1)
+		{
+			scene = 12;
+			message = "Cletus takes a deep breath.</br>\"Dearest fellow-folk, I proclaim that I am heir to the title of 'seconder'. For in a timely manner, I ensured that I would be first to reaffirm the mayor's proposition of the elimination of taxes (as far as local municipalities are involved.)\"";
+			hide2();
+			hide3();
+			hide4();
+			changeValues1('?');
+			pic = "cletus.png";
+		}
+		else if (choice == 2)
+		{
+			scene = 13;
+			message = "Francine starts muttering that no, it was not her.</br>She starts screaming.</br>She is not a witch, she yells! Don't burn me, she hollers!</br></br>Yeah, this lady is insane.";
+			hide2();
+			hide3();
+			hide4();
+			changeValues1('Moving on...');
+			pic = "francine.png";
+		}
+		else if (choice == 3)
+		{
+			scene = 19;
+			message = "The mayor is getting sick of all this arguing. He takes out the instant replay footage. He exposes the fact that several other people had their hands up before Barbara's, so she couldn't be first.</br></br>Barbara asks why he can't just use the footage to determine who was first. He responds by saying that would be the easy way out.";
+			hide2();
+			hide3();
+			hide4();
+			changeValues1('Could it have been Harriet?');
+			pic = "mayor disagrees.png";
+		}
+		else if (choice == 4)
+		{
+			scene = 20;
+			message = "Oh. Oops.</br>Is Harriet out already?</br></br>This stuff is really hard to figure out.";
+			hide3();
+			hide4();
+			changeValues1('Yes.');
+			changeValues2('No.');
+			pic = "is harriet.png";
+		}
+	}
+	else if (scene == 19)
+	{
+		if (choice)
+		{
+			scene = 14;
+			message = "OBJECTION!</br>Harriet's husband, Alfred, says that she was running an errand when the seconding commenced! She could not have been the first second when she wasn't even here!";
+			hide2();
+			hide3();
+			changeValues1('Harriet\'s out.');
+			pic = "blaming harriet.png";
+		}
+	}
+	else if (scene ==20)
+	{
+		if (choice == 1)
+		{
+			scene = 22;
+			message = "Oops again. Apparently she has such a bad memory, that she also forgot she was out!";
+			hide2();
+			changeValues1('Continue.');
+			pic = "is actually harriet.png";
+		}
+		else if (choice == 2)
+		{
+			scene = 21;
+			message = "OBJECTION!</br>Harriet's husband, Alfred, says that she was running an errand when the seconding commenced! She could not have been the first second when she wasn't even here!";
+			hide2();
+			changeValues1('Silly Harriet. Seconding is for kids.');
+			pic = "blaming harriet.png";
+		}
+	}
+	else if (scene == 21)
+	{
+		if (choice)
+		{
+			scene = 22;
+			message = "Oops again. Apparently she has such a bad memory, that she also forgot she was out!";
+			hide2();
+			changeValues1('Continue.');
+			pic = "is actually harriet.png";
+		}
+	}
+	else if (scene == 22)
+	{
+		if (choice)
+		{
+			scene = 23;
+			message = "The mayor is getting very frustrated now. This is his meeting, and the people are running it! He's cursing up a storm, and the council is trying to settle him down. They suggest a nice game of musical chairs. Would that be fun, Mr. Mayor? Would that calm you down?";
+			changeValues1('City Council: Commence playing musical chairs.');
+			pic = "musical chairs.png";
+		}
+	}
+	else if (scene == 23)
+	{
+		if (choice)
+		{
+			scene = 24;
+			message = "The people stop arguing for a moment and stare.</br></br>This is awkward.";
+			changeValues1('Citizens: Continue arguing.');
+			pic = "question.png";
+		}
+	}
+	else if (scene == 24)
+	{
+		if (choice)
+		{
+			scene = 25;
+			message = "Alright, who's left?</br>Debra and Icarus are still in!</br></br>The two decide to duke it out and use their fists to solve the problem. Fighting <i>obviously</i> solves everything";
+			changeValues1('Debra: Hit first.');
+			show2();
+			changeValues2('Icarus: Hit first.');
+			pic = "duking it out.png";
+		}
+	}
+	else if (scene == 25)
+	{
+		if (choice)
+		{
+			scene = 26;
+			message = "Both fists fly at the same time and knock each other in the jaw.</br>Both get knocked-out instantly.</br>Even if one of them seconded first, it doesn't matter anymore. They both lost.";
+			changeValues1('Is there ANYONE left???? Or is everyone insane?');
+			hide2();
+			pic = "2 kos.png";
+		}
+	}
+	else if (scene == 26)
+	{
+		if (choice)
+		{
+			scene = 27;
+			message = "The answer to both of those questions is 'yes'.</br></br>Edward and Joanne look at the pair on the floor, then look at each other. No, they won't fight over it. Neither especially wants to be it.</br>But then again, they are the only ones left.</br></br>That means it's time for YOU to decide.";
+			pic = "not worth it.png";
+			changeValues1('Edward wins!');
+			show2();
+			changeValues2('Joanne wins!');
+		}
+	}
+	else if (scene == 27)
+	{
+		if (choice==1)
+		{
+			scene = 28;
+			message = "Edward wins!</br>Congratulations, you lucky man! Your name is going down in history!";
+			changeValues1('Restart?');
+			hide2();
+			pic = "edward.png";
+		}
+		if (choice==2)
+		{
+			scene = 29;
+			message = "Joanne wins!</br>Congratulations, you lucky woman! Your name is going down in history!";
+			changeValues1('Restart?');
+			hide2();
+			pic = "joanne.png";
+		}
+	}
+	else if (scene == 28)
+	{
+		if (choice)
+		{
+			scene = 0;
+			message = "A game by Marty Taylor</br></br>Ludum Dare 48 #27";
+			changeValues1('Begin');
+			pic = "title.png";
+		}
+	}
+	else if (scene == 29)
+	{
+		if (choice)
+		{
+			scene = 0;
+			message = "A game by Marty Taylor</br></br>Ludum Dare 48 #27";
+			changeValues1('Begin');
+			pic = "title.png";
+		}
+	}
+	document.getElementById("scenetext").innerHTML = message;
+	document.getElementById("sceneimg").src = pic;
+}
+
+
+
+
+</script>
+<style>
+#wrapper{width: 650px; margin: 0px auto;}
+</style>
+</head>
+
+<body onload="hide2();hide3();hide4();">
+<div id="wrapper">
+<img id="sceneimg" src="title.png" align = "center"/>
+<center><div id="scenetext">A game by Marty Taylor</br></br>Ludum Dare 48 #27</div>
+</br>
+<input type="button" id="choice1" value="Begin" onclick="changeScene(1);">
+</br>
+<input type="button" id="choice2" value="" onclick="changeScene(2);">
+</br>
+<input type="button" id="choice3" value="" onclick="changeScene(3);">
+</br>
+<input type="button" id="choice4" value="" onclick="changeScene(4);"></center>
+</div>
+</body>
+</html>
