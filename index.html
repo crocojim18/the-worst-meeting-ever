@@ -3,7 +3,7 @@
 <title>The Worst Meeting EVER</title>
 <script type="text/javascript">
 var scene = 0;
-var pic = "title.png";
+var pic = "pics/title.png";
 
 function changeValues1(message)
 {
@@ -64,7 +64,7 @@ function changeScene(choice)
 			scene = 1;
 			message = "Your local government is coming together for the yearly budget meeting. Ho hum.</br>However, the place is packed. A casual observer may think that in this community, everyone cares about budgets or large numbers or even their local government.</br>No. That isn't anywhere near the case.</br>The case is that in a sudden and strange turn of events, the local government has far too much money!";
 			changeValues1('Say whaaaaat?');
-			pic = "1.png";
+			pic = "pics/1.png";
 		}
 	}
 	else if (scene == 1)
@@ -74,7 +74,7 @@ function changeScene(choice)
 			scene = 2;
 			message = "There has been discussion about how to get rid of all of this money. The mayor has suggested that he use this, the people's money, to buy him a large, fancy car; one covered in thousands of diamonds that glisten in the sunlight. The people, however, have suggested that the mayor buy one of those cars for each citizen of the town.</br>Basically, not a lot of progress has been made.";
 			changeValues1('Have there been any other suggestions?');
-			pic = "2.png";
+			pic = "pics/2.png";
 		}
 	}
 	else if (scene == 2)
@@ -88,7 +88,7 @@ function changeScene(choice)
 			changeValues1('We should burn down the town, then use the money to rebuild!');
 			changeValues2('Bribe neighboring towns to do your bidding!');
 			changeValues3('Save the money for the future!');
-			pic = "3.png";
+			pic = "pics/3.png";
 		}
 	}
 	else if (scene == 3)
@@ -100,7 +100,7 @@ function changeScene(choice)
 			hide2();
 			hide3();
 			changeValues1('A voice speaks up...');
-			pic = "no.png";
+			pic = "pics/no.png";
 		}
 		else if (choice==2)
 		{
@@ -109,7 +109,7 @@ function changeScene(choice)
 			hide2();
 			hide3();
 			changeValues1('A voice speaks up...');
-			pic = "but money.png";
+			pic = "pics/but money.png";
 		}
 		else if (choice==3)
 		{
@@ -118,7 +118,7 @@ function changeScene(choice)
 			hide2();
 			hide3();
 			changeValues1('A voice speaks up...');
-			pic = "what have you done.png";
+			pic = "pics/what have you done.png";
 		}
 	}
 	else if (scene == 4)
@@ -128,7 +128,7 @@ function changeScene(choice)
 			scene = 5;
 			message = "What if we abolish local taxes?";
 			changeValues1('People: Rejoice.');
-			pic = "5.png";
+			pic = "pics/5.png";
 		}
 	}
 	else if (scene == 5)
@@ -138,7 +138,7 @@ function changeScene(choice)
 			scene = 6;
 			message = "Everyone thinks that it's a brilliant idea!</br>Whoever came up with it should be rewarded!</br></br>However, everyone says they came up with the idea, so no one goes down in the history books.";
 			changeValues1('Mayor: Make a motion');
-			pic = "rejoice.png";
+			pic = "pics/rejoice.png";
 		}
 	}
 	else if (scene == 6)
@@ -150,7 +150,7 @@ function changeScene(choice)
 			changeValues1('Second the motion!');
 			show2();
 			changeValues2('Yell \'No, this is a bad idea!\'');
-			pic = "no car for me.png";
+			pic = "pics/no car for me.png";
 		}
 	}
 	else if (scene == 7)
@@ -161,7 +161,7 @@ function changeScene(choice)
 			message = "You weren't alone in seconding the motion. Never before has an entire town unanimously voted for anything.</br>So many hands went up so fast that it easily could have lifted a small rocket into orbit at that moment.</br></br>But anyway, no taxes! This might possibly be the BEST meeting ever!";
 			changeValues1('Continue.');
 			hide2();
-			pic = "a new title.png";
+			pic = "pics/a new title.png";
 		}
 		if (choice==2)
 		{
@@ -169,7 +169,7 @@ function changeScene(choice)
 			message = "No one doesn't second the motion. You feel pressured to do the same. You slowly raise your hand to second. Actually, at this point, you must be 500th-ing it.</br>Aww, but paying taxes was so fun though! Oh well. It's what the majority wants.";
 			changeValues1('Continue.');
 			hide2();
-			pic = "hands.png";
+			pic = "pics/hands.png";
 		}
 	}
 	else if (scene == 8)
@@ -179,7 +179,7 @@ function changeScene(choice)
 			scene = 9;
 			message = "The mayor is satisfied with a unanimous vote, although slightly disappointed that he doesn't get his car. He sits back in his chair as the minutes-taker takes down the minutes.</br></br>The minutes-taker has a dilemma. He isn't sure who to put down as seconding the vote!";
 			changeValues1('Continue.');
-			pic = "oh no.png";
+			pic = "pics/oh no.png";
 		}
 	}
 	else if (scene == 9)
@@ -189,7 +189,7 @@ function changeScene(choice)
 			scene = 10;
 			message = "Ten people come up to the stage, saying that they seconded first.</br></br>It is YOUR job to determine <b>who the first second was.</b>";
 			changeValues1('Who says they seconded first?');
-			pic = "in total.png";
+			pic = "pics/in total.png";
 		}
 	}
 	else if (scene == 10)
@@ -203,7 +203,7 @@ function changeScene(choice)
 			show3();
 			changeValues2('Francine');
 			changeValues3('Harriet');
-			pic = "in total with names.png";
+			pic = "pics/in total with names.png";
 		}
 	}
 	else if (scene == 11)
@@ -216,7 +216,7 @@ function changeScene(choice)
 			hide3();
 			hide4();
 			changeValues1('?');
-			pic = "cletus.png";
+			pic = "pics/cletus.png";
 		}
 		if (choice==2)
 		{
@@ -226,7 +226,7 @@ function changeScene(choice)
 			hide3();
 			hide4();
 			changeValues1('Moving on...');
-			pic = "francine.png";
+			pic = "pics/francine.png";
 		}
 		if (choice==3)
 		{
@@ -236,7 +236,7 @@ function changeScene(choice)
 			hide3();
 			hide4();
 			changeValues1('Harriet\'s out.');
-			pic = "blaming harriet.png";
+			pic = "pics/blaming harriet.png";
 		}
 	}
 	else if (scene==12)
@@ -248,7 +248,7 @@ function changeScene(choice)
 			show2();
 			changeValues1('Barbara');
 			changeValues2('George');
-			pic = "out cletus.png";
+			pic = "pics/out cletus.png";
 		}
 	}
 	else if (scene == 13)
@@ -258,7 +258,7 @@ function changeScene(choice)
 			scene = 16;
 			message = "Even if Francine did it, no one would want her name to go on the minutes anyway.</br></r>What if Cletus did it?";
 			changeValues1('What has Cletus to say?');
-			pic = "out francine.png";
+			pic = "pics/out francine.png";
 		}
 	}
 	else if (scene == 14)
@@ -268,7 +268,7 @@ function changeScene(choice)
 			scene = 15;
 			message = "Alfred instead insists that it was actually HIM who was first!";
 			changeValues1('But wait!');
-			pic = "alfred insists.png";
+			pic = "pics/alfred insists.png";
 		}
 	}
 	else if (scene == 15)
@@ -284,7 +284,7 @@ function changeScene(choice)
 			changeValues2('Francine');
 			changeValues3('Barbara');
 			changeValues4('Umm, all of those people are eliminated already!');
-			pic = "alfred to jail.png";
+			pic = "pics/alfred to jail.png";
 		}
 	}
 	else if (scene == 16)
@@ -296,7 +296,7 @@ function changeScene(choice)
 			hide2();
 			hide3();
 			changeValues1('?');
-			pic = "cletus.png";
+			pic = "pics/cletus.png";
 		}
 	}
 	else if (scene == 17)
@@ -308,7 +308,7 @@ function changeScene(choice)
 			hide2();
 			changeValues1('Could it have been Harriet?');
 			hide4();
-			pic = "mayor disagrees.png";
+			pic = "pics/mayor disagrees.png";
 		}
 		else if (choice==2)
 		{
@@ -321,7 +321,7 @@ function changeScene(choice)
 			changeValues2('Francine');
 			changeValues3('Barbara');
 			changeValues4('Umm, all of those people are eliminated already!');
-			pic = "alfred to jail.png";
+			pic = "pics/alfred to jail.png";
 		}
 	}
 	else if (scene == 18)
@@ -334,7 +334,7 @@ function changeScene(choice)
 			hide3();
 			hide4();
 			changeValues1('?');
-			pic = "cletus.png";
+			pic = "pics/cletus.png";
 		}
 		else if (choice == 2)
 		{
@@ -344,7 +344,7 @@ function changeScene(choice)
 			hide3();
 			hide4();
 			changeValues1('Moving on...');
-			pic = "francine.png";
+			pic = "pics/francine.png";
 		}
 		else if (choice == 3)
 		{
@@ -354,7 +354,7 @@ function changeScene(choice)
 			hide3();
 			hide4();
 			changeValues1('Could it have been Harriet?');
-			pic = "mayor disagrees.png";
+			pic = "pics/mayor disagrees.png";
 		}
 		else if (choice == 4)
 		{
@@ -364,7 +364,7 @@ function changeScene(choice)
 			hide4();
 			changeValues1('Yes.');
 			changeValues2('No.');
-			pic = "is harriet.png";
+			pic = "pics/is harriet.png";
 		}
 	}
 	else if (scene == 19)
@@ -376,7 +376,7 @@ function changeScene(choice)
 			hide2();
 			hide3();
 			changeValues1('Harriet\'s out.');
-			pic = "blaming harriet.png";
+			pic = "pics/blaming harriet.png";
 		}
 	}
 	else if (scene ==20)
@@ -387,7 +387,7 @@ function changeScene(choice)
 			message = "Oops again. Apparently she has such a bad memory, that she also forgot she was out!";
 			hide2();
 			changeValues1('Continue.');
-			pic = "is actually harriet.png";
+			pic = "pics/is actually harriet.png";
 		}
 		else if (choice == 2)
 		{
@@ -395,7 +395,7 @@ function changeScene(choice)
 			message = "OBJECTION!</br>Harriet's husband, Alfred, says that she was running an errand when the seconding commenced! She could not have been the first second when she wasn't even here!";
 			hide2();
 			changeValues1('Silly Harriet. Seconding is for kids.');
-			pic = "blaming harriet.png";
+			pic = "pics/blaming harriet.png";
 		}
 	}
 	else if (scene == 21)
@@ -406,7 +406,7 @@ function changeScene(choice)
 			message = "Oops again. Apparently she has such a bad memory, that she also forgot she was out!";
 			hide2();
 			changeValues1('Continue.');
-			pic = "is actually harriet.png";
+			pic = "pics/is actually harriet.png";
 		}
 	}
 	else if (scene == 22)
@@ -416,7 +416,7 @@ function changeScene(choice)
 			scene = 23;
 			message = "The mayor is getting very frustrated now. This is his meeting, and the people are running it! He's cursing up a storm, and the council is trying to settle him down. They suggest a nice game of musical chairs. Would that be fun, Mr. Mayor? Would that calm you down?";
 			changeValues1('City Council: Commence playing musical chairs.');
-			pic = "musical chairs.png";
+			pic = "pics/musical chairs.png";
 		}
 	}
 	else if (scene == 23)
@@ -426,7 +426,7 @@ function changeScene(choice)
 			scene = 24;
 			message = "The people stop arguing for a moment and stare.</br></br>This is awkward.";
 			changeValues1('Citizens: Continue arguing.');
-			pic = "question.png";
+			pic = "pics/question.png";
 		}
 	}
 	else if (scene == 24)
@@ -438,7 +438,7 @@ function changeScene(choice)
 			changeValues1('Debra: Hit first.');
 			show2();
 			changeValues2('Icarus: Hit first.');
-			pic = "duking it out.png";
+			pic = "pics/duking it out.png";
 		}
 	}
 	else if (scene == 25)
@@ -449,7 +449,7 @@ function changeScene(choice)
 			message = "Both fists fly at the same time and knock each other in the jaw.</br>Both get knocked-out instantly.</br>Even if one of them seconded first, it doesn't matter anymore. They both lost.";
 			changeValues1('Is there ANYONE left???? Or is everyone insane?');
 			hide2();
-			pic = "2 kos.png";
+			pic = "pics/2 kos.png";
 		}
 	}
 	else if (scene == 26)
@@ -458,7 +458,7 @@ function changeScene(choice)
 		{
 			scene = 27;
 			message = "The answer to both of those questions is 'yes'.</br></br>Edward and Joanne look at the pair on the floor, then look at each other. No, they won't fight over it. Neither especially wants to be it.</br>But then again, they are the only ones left.</br></br>That means it's time for YOU to decide.";
-			pic = "not worth it.png";
+			pic = "pics/not worth it.png";
 			changeValues1('Edward wins!');
 			show2();
 			changeValues2('Joanne wins!');
@@ -472,7 +472,7 @@ function changeScene(choice)
 			message = "Edward wins!</br>Congratulations, you lucky man! Your name is going down in history!";
 			changeValues1('Restart?');
 			hide2();
-			pic = "edward.png";
+			pic = "pics/edward.png";
 		}
 		if (choice==2)
 		{
@@ -480,7 +480,7 @@ function changeScene(choice)
 			message = "Joanne wins!</br>Congratulations, you lucky woman! Your name is going down in history!";
 			changeValues1('Restart?');
 			hide2();
-			pic = "joanne.png";
+			pic = "pics/joanne.png";
 		}
 	}
 	else if (scene == 28)
@@ -490,7 +490,7 @@ function changeScene(choice)
 			scene = 0;
 			message = "A game by Marty Taylor</br></br>Ludum Dare 48 #27";
 			changeValues1('Begin');
-			pic = "title.png";
+			pic = "pics/title.png";
 		}
 	}
 	else if (scene == 29)
@@ -500,7 +500,7 @@ function changeScene(choice)
 			scene = 0;
 			message = "A game by Marty Taylor</br></br>Ludum Dare 48 #27";
 			changeValues1('Begin');
-			pic = "title.png";
+			pic = "pics/title.png";
 		}
 	}
 	document.getElementById("scenetext").innerHTML = message;
@@ -518,7 +518,7 @@ function changeScene(choice)
 
 <body onload="hide2();hide3();hide4();">
 <div id="wrapper">
-<img id="sceneimg" src="title.png" align = "center"/>
+<img id="sceneimg" src="pics/title.png" align = "center"/>
 <center><div id="scenetext">A game by Marty Taylor</br></br>Ludum Dare 48 #27</div>
 </br>
 <input type="button" id="choice1" value="Begin" onclick="changeScene(1);">
