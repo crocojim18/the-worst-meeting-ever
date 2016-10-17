@@ -1,6 +1,5 @@
 # The Worst Meeting EVER
 #### a Choose-Your-Own-Adventure game by Marty Taylor
-#### originally made for Ludum Dare 27
 ---
 
 ## _Who seconded first?_
